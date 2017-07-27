@@ -1,0 +1,3 @@
+{% set P_CSS = "/public/stylesheet" %}
+{% set P_JS = "/public/javascripts" %}
+{% set P_IMAGE = "/public/images" %}
