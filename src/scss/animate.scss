@@ -1,0 +1,20 @@
+// This animations is for moving from hidden left
+// into view and out right
+@keyframes out-left-in {
+  0%{
+    left:-100%;
+  }
+  100%{
+    left:0%
+  }
+}
+
+@keyframes in-right-out {
+  0%{
+    left:0%
+  }
+  100%{
+    left:100%
+  }
+}
+

@@ -1,0 +1,39 @@
+@import "../scss/preset";
+@import "animate";
+
+.#{$prefix}-link {
+  &.__hoverable {
+    @extend %relative;
+    @extend %inline-block;
+    @extend %hide-overflow;
+    &:after {
+      @extend %absolute;
+      @extend %hide-left;
+      @extend %left-bottom;
+      @extend %fill-horizontal;
+      content: "";
+      height: 2px;
+      background-color: grey;
+    }
+
+    &.mouse-enter{
+      &:after {
+        animation: out-left-in 0.4s $global-easing forwards;
+      }
+    }
+    &.mouse-left{
+      &:after {
+        animation: in-right-out 0.4s $global-easing forwards;
+      }
+    }
+  }
+
+  a {
+    color: $color-theme-1;
+    @extend %default-transition;
+    @extend %no-decoration;
+    &:hover{
+      color: darken($color-theme-1,20%);
+    }
+  }
+}

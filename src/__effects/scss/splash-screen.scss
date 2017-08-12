@@ -1,0 +1,11 @@
+.splash-screen{
+  @extend  %fixed;
+  @extend  %fill-horizontal;
+  @extend  %fill-vertical;
+  background-color: white;
+  text-align: center;
+  z-index: 999999999; // above all
+  *{
+    font-weight:bolder;
+  }
+}

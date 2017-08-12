@@ -1,0 +1,9 @@
+<nav class="wip-side-bar" data-toggled='side-bar' data-toggled-state="active">
+    <ul class="navi">
+        <li><a href="/">Home</a></li>
+        <li><a href="/plaform">Plaform</a></li>
+        <li><a href="/requesr">Request a demo</a></li>
+        <li><a href="/demo">Blog</a></li>
+    </ul>
+    <a href="#" class="close" data-toggle="side-bar" data-toggle-trigger="click">CLOSE</a>
+</nav>

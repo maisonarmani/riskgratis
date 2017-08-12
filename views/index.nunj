@@ -1,1 +1,3 @@
-{% extends "base.nunj" %}
+{% include "header.nunj" %}
+{% include "partials/index/body.nunj" %}
+{% include "footer.nunj" %}

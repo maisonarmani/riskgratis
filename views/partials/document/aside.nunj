@@ -1,0 +1,30 @@
+<div class="aside col-lg-2 col-md-4 col-sm-5 hidden-xs">
+    <div>
+        <ul>
+            <li class="dropline">
+                <span class="__heading">Plaform  <span class="fa fa-chevron-down"></span></span>
+                <ul class="__items_wrapper">
+                    <li class="__item"><a href="/platform#api">API</a></li>
+                    <li class="__item"><a href="/platform#service">Services</a></li>
+                </ul>
+            <li class="dropline">
+                <span class="__heading">Features  <span class="fa fa-chevron-down"></span></span>
+                <ul class="__items_wrapper">
+                    <li class="__item"><a href="/features">API</a></li>
+                </ul>
+            </li>
+            <li class="dropline">
+                <span class="__heading">Design Goals <span class="fa fa-chevron-down"></span></span>
+                <ul class="__items_wrapper">
+                    <li class="__item"><a href="/design-goals#goal1">Innovation</a></li>
+                </ul>
+            </li>
+            <li class="dropline">
+                <span class="__heading">Documentation <span class="fa fa-chevron-down"></span></span>
+                <ul class="__items_wrapper">
+                    <li class="__item"><a href="platform">API</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

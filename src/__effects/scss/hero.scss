@@ -1,0 +1,66 @@
+.hero {
+  $bg: linear-gradient(654deg, #1f4c74, black);
+  @extend %fill-horizontal;
+  @extend %fill-vertical;
+  @extend %relative;
+  text-align: center;
+  background: $bg;
+  color: $text-theme-3;
+  & > #background{
+    position:absolute;
+    z-index:21212;
+    top:0;left:0;
+    width: 100%;
+    height: 95%;
+  }
+
+  & > .particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & > .__content {
+
+    position:relative;
+    z-index:3232322;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    padding-left: 4em;
+    padding-right: 4em;
+    & > .__heading {
+      * {
+        @extend h1;
+        font-size: 34px;
+        font-weight: bolder;
+        font-family: "Circular Std Bold" !important;
+      }
+    }
+    & > .__subheading {
+      * {
+        @extend h1;
+        font-size: 20px;
+        vertical-align: top;
+        font-weight: normal;
+      }
+    }
+    & > .__buttons {
+      margin: 4%;
+      font-size: 1.03em;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 100px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    transform: rotate(1deg);
+    top: 70px;
+    position: relative;
+  }
+
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Ubuntu');
+
+*::-moz-selection,
+*::selection  { /* Code for Firefox */
+  color: $color-theme-2;
+  background: $color-theme-1;
+}
+
+*{
+  -moz-osx-font-smoothing:antialias;
+}
+body{
+  font-size: 12px;
+}
+a{
+  line-height: 2.5em;
+  font-weight:bolder;
+  &:hover{
+    text-decoration:none !important;
+  }
+}
+
+*{
+  vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Circular Std Book" !important;
+  font-weight: bolder;
+  line-height: 1.4em !important;
+}
+p{
+  font-family:"Circular Std Book";
+  line-height: 1.5em;
+}
+
+
+.heading{
+  padding:0.5em !important;
+}

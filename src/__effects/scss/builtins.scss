@@ -1,0 +1,169 @@
+/**
+  This helps  with css optimization, reducing the content of the css by reusing props
+ */
+%no-decoration{
+  list-style: none;
+  text-decoration: none;
+}
+%relative{
+  position: relative;
+}
+%absolute{
+  position: absolute;
+}
+%fixed{
+  position: fixed;
+}
+%sticky{
+  position: sticky;
+}
+%top-left{
+  top:0;
+  left:0
+}
+%left-bottom{
+  bottom:0;
+  left:0
+}
+%top-right{
+  top:0;
+  right:0
+}
+%right-bottom{
+  bottom:0;
+  right:0
+}
+
+%hide-right{
+  right:-100%
+}
+%hide-left{
+  left:-100%
+}
+%no-padding{
+  padding: 0 0 0 0 !important;
+}
+%no-margin{
+  margin: 0 0 0 0 !important;
+}
+%no-margin-padding{
+  @extend %no-padding;
+  @extend %no-margin;
+}
+%fill-vertical{
+  height: 100%;
+}
+
+%fill-horizontal{
+  width: 100%;
+}
+%block{
+  display: block;
+}
+%inline{
+  display: inline;
+}
+%inline-block{
+  display: inline-block;
+}
+%hidden{
+  display: none;
+}
+%flex{
+  display: block;
+}
+%hide-overflow{
+  overflow:hidden;
+}
+
+%default-transition{
+  transition: all 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+%float-left{
+  float:left;
+}
+%float-right {
+  float: right;
+
+}
+
+//
+.no-decoration{
+  @extend %no-decoration
+}
+.relative{
+  @extend %relative
+}
+.absolute{
+  @extend %absolute
+}
+.fixed{
+  @extend %fixed
+}
+.sticky{
+  @extend %sticky
+}
+.top-left{
+  @extend %top-left
+}
+.left-bottom{
+  @extend %left-bottom
+}
+.top-right{
+  @extend %top-right
+}
+.right-bottom{
+  @extend %right-bottom
+}
+
+.hide-right{
+  @extend %hide-right
+}
+.hide-left{
+  @extend %hide-left
+}
+.no-padding{
+  padding: 0 0 0 0 !important;
+}
+.no-margin{
+  margin: 0 0 0 0 !important;
+}
+.no-margin-padding{
+  @extend .no-padding;
+  @extend .no-margin;
+}
+.fill-vertical{
+  height: 100%;
+}
+
+.fill-horizontal{
+  width: 100%;
+}
+.block{
+  display: block;
+}
+.inline{
+  display: inline;
+}
+.inline-block{
+  display: inline-block;
+}
+.hidden{
+  display: none;
+}
+.flex{
+  display: block;
+}
+.hide-overflow{
+  overflow:hidden;
+}
+
+.default-transition{
+  transition: all 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
+}
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}

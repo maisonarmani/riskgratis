@@ -1,0 +1,26 @@
+<header class="wip-header notification-on {%  if active %} {{ "active" }}{% endif %}" data-toggle-state="active" data-toggled="header">
+    <div class="container">
+        <!--- this is the site logo-->
+        <a href="/" class="__logo"><img src="/images/logo1.png" class=""/> </a>
+        <!-- menu show up on mobile and when it is required-->
+        <a href="#" class="__menu" data-toggle="side-bar" data-toggle-trigger="click">Menu</a>
+        <!--- this navigation for the site-->
+        <div class="__nav hidden-xs hidden-sm">
+            <ul>
+                <!---
+                <li data-toggle="dropdown" data-toggle-trigger="hover">
+                    <a href="#" >Dropdown</a>
+                    <div class="__dropdown" data-toggled='dropdown' data-toggled-state="active">
+                        <p>Maison Armani is working</p>
+                    </div>
+                </li>
+                ---!>
+                {% for link in links%}
+                    <li class="wip-link __hoverable">
+                        <a href="{{ link.href }}" class="{% if link.active %}{{ "active" }}{% endif %}">{{ link.value }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>

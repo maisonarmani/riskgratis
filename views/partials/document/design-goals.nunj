@@ -1,0 +1,16 @@
+<section class="wip-section" data-toggle="header" data-toggle-trigger="scroll">
+    <div class="container document-page">
+        {% include "./aside.nunj" %}
+        <div class="main-content col-lg-10 col-md-8 col-sm-7">
+            {%  for goal in goals %}
+            <div class="stamp-box" id="goal{{ loop.index }}">
+                <p class="__heading_stamp" >GOAL {{ loop.index }}</p>
+                <p class="__heading">{{ goal.title }}</p>
+                <span class="__subheading">
+                    {{ goal.desc }}
+                </span>
+            </div>
+            {%  endfor %}
+        </div>
+    </div>
+</section>

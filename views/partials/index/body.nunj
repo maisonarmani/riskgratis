@@ -1,0 +1,174 @@
+<section class="hero notification-on" id="hero" >
+    <div class="background" id="background"></div>
+    <div class="__content container">
+        <h4 class="__heading ">
+            <span class="inline-block">A SYSTEM THAT WORKS<span class="highlight"> EVERYTIME</span></span>
+        </h4>
+        <h2 class="__subheading" data-animate="fadeInUp" data-animate-true="animated">
+            <div>
+                <span>
+                    We are not only interested in making your <span class="highlight">business process prompt</span>,
+                    timely effective and accurate, we are interested in expanding your business, enhance your capability
+                    to satisfy to your clients, increase your client base and bring innovation to your business process.
+                </span>
+            </div>
+            </h4>
+            <div class="__buttons" data-animate="fadeInUp" data-animate-true="animated">
+                <a href="/platform" class="button theme-1" data-animate="flipInRight"
+                   data-animate-true="animated">Plaform Plan&nbsp;</a>
+                <a href="/request" class="button theme-3 outline" data-animate="flipInLeft"
+                   data-animate-true="animated">Request Demo</a>
+            </div>
+        </h2>
+    </div>
+</section>
+<section class="">
+    <div class="container">
+        <div class="box_wrapper">
+            <div class="col-lg-6 ">
+                <div class="text-card padded">
+                    <h3 class="__heading">Header 1</h3>
+                    <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                        operating system’s settings for font smoothing.</h5>
+                    <a href="#" class="wip-link __hoverable theme-1-link">FONT SMOOTHING</a>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="text-card padded">
+                    <h3 class="__heading">Header 1</h3>
+                    <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                        operating system’s settings for font smoothing.</h5>
+                    <a href="#" class="wip-link __hoverable theme-1-link">PARTNER WITH RISKGRATIS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wip-section" data-toggle="header" data-toggle-trigger="scroll">
+    <div class="text-center">
+        <h2 class="heading">Build forward-looking data architectures right, the first time.</h2>
+    </div>
+    <div class="container">
+        <div class="__padded">
+            <div class="col-lg-8">
+                <img src="/images/dashboard.jpg" class="img-responsive"/>
+            </div>
+            <div class="col-lg-4">
+                <h3><b class="highlight">Better</b> for business.</h3>
+                <p>
+                    You can provide multiple callback functions that behave just like middleware, except that these
+                    callbacks can invoke next('route') to bypass the remaining route callback(s). You can use this
+                    mechanism to impose pre-conditions on a route, then pass control to subsequent routes if there is no
+                    reason to proceed with the current route.
+                </p>
+                <p><a href="/request" class="wip-link">REQUEST DEMO</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="__padded wip-section strip sl">
+    <div class="__heading">
+        <h3 class="text-center heading">Features</h3>
+        <p class="text-center">Riskgratis gives you all this and many more.</p>
+
+    </div>
+    <div class="container">
+        <div class="text-card dark col-lg-3 col-md-4 col-sm-6">
+            <img src="/images/icons/002-certificate.png" class="__image"/>
+            <h4 class="__heading">Policy Maintenance</h4>
+            <span class="__subheading">Maintenance of policy and creation of new ones</span>
+        </div>
+        <div class="text-card dark col-lg-3 col-md-4 col-sm-6">
+            <img src="/images/icons/003-business-card.png" class="__image"/>
+            <h4 class="__heading">Claim Processing</h4>
+            <span class="__subheading">Maintenance of policy and creation of new ones</span>
+        </div>
+        <div class="text-card dark col-lg-3 col-md-4 col-sm-6">
+            <img src="/images/icons/001-team.png" class="__image"/>
+            <h4 class="__heading">Agency Maintenance</h4>
+            <span class="__subheading">Maintenance of policy and creation of new ones</span>
+        </div>
+        <div class="text-card dark col-lg-3 col-md-4 col-sm-6">
+            <img src="/images/icons/004-padlock.png" class="__image"/>
+            <h4 class="__heading">Data Security</h4>
+            <span class="__subheading">Maintenance of policy and creation of new ones</span>
+        </div>
+        <!---
+        <table class="table table-responsive">
+            <tr>
+                <th class="">Features</th>
+                <th class="">Available</th>
+                <th class="">In Development</th>
+            </tr>
+            {% for feature in features %}
+                <tr>
+                    <td>{{ feature.title }}</td>
+                    <td>{% if feature.is_ready %} {{ "Yes" }}{% else %} {{ "No" }}{% endif %}</td>
+                    <td>{% if feature.is_ready %} {{ "No" }}{% else %} {{ "Yes" }}{% endif %}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        -->
+        <div class="text-center">
+            <a href="/features" class="theme-3 button outline ">VIEW ALL FEATURES</a>
+        </div>
+    </div>
+</section>
+<section class="wip-section">
+    <div class="container">
+        <div class="col-lg-4 text-card bordered">
+            <h3 class="_heading">Update 1</h3>
+            <h5 class="__subheading">
+                All the other browsers (most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothingAll the other browsers (most notably: Firefox on Windows)
+                respects their
+                operating system’s settings for font smoothingAll the other browsers (most notably: Firefox on Windows)
+                respects their
+                operating system’s settings for font smoothing.</h5>
+            <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
+        </div>
+        <div class="col-lg-4 text-card bordered">
+            <h3 class="_heading">Update 2</h3>
+            <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothing.</h5>
+            <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
+        </div>
+        <div class="col-lg-4 text-card bordered">
+            <h3 class="_heading">Update 3</h3>
+            <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothing.(most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothing.(most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothing.</h5>
+            <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="highlight-box no-margin-padding theme-1">
+        <div class="container text-center">
+            <h3 class="text-center" style="margin-top:1.3em;">Really Important Information</h3>
+            <p>
+                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+                and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+                evolved
+                over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <img src="/images/dashboard.jpg" class="img-responsive center" style="margin:1em auto 0 auto"/>
+        </div>
+    </div>
+</section>
+
+
+<section class="wip-section">
+
+    <div class="container __padded">
+        <h3 class="text-center">Don't miss the latest updates</h3>
+        <div class="wip-input-group text-center subscribe">
+            <form class="" action="/api/newsletter" method="post">
+                <input type="email" placeholder="masonarmani38@gmail.com"/>
+                <button class="button">Subscribe to newsletter</button>
+            </form>
+        </div>
+    </div>
+</section>

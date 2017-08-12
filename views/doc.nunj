@@ -1,0 +1,3 @@
+{% include "header.nunj" %}
+{% include "partials/document/body.nunj" %}
+{% include "footer.nunj" %}

@@ -1,0 +1,36 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Non Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+
+/* Extra Small Devices, Phones */
+@mixin xs {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+/* Small Devices, Tablets */
+@mixin sm {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+/* Medium Devices, Desktops */
+@mixin md {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@mixin lg {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+

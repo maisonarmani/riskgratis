@@ -1,0 +1,42 @@
+// always but the animation state in the start
+.#{$prefix} {
+  &-notification {
+    &.disable{
+      bottom:-20em
+    }
+    @extend %fixed;
+    @extend %right-bottom;
+    transition: all 0.4s $global-easing;
+    background-color: $color-theme-1;
+    z-index: 787878;
+    color: white;
+    padding: 1em;
+    width: 34em;
+    max-width: 90%;
+    margin-right: 3em;
+    margin-bottom: 2em;
+    border-radius: 0.51em !important;
+    &  .text{
+      font-family:"Circular Std Book" !important;
+      font-size: 15px;
+      padding: 0 1em;
+      margin: 0;
+    }
+    a{
+      padding: 1em 1em !important;
+    }
+    & > .close{
+      @extend %absolute;
+      @extend %top-right;
+      margin-right: 0.5em;
+      margin-top: 0.5em;
+      font-size: 14px;
+
+    }
+  }
+}
+
+
+.notification-on{
+  //margin-top: 100px;
+}

@@ -1,0 +1,12 @@
+body{
+  color: darken($color-theme-2,10%) !important;
+}
+a, .highlight{
+  color:$color-theme-1;
+}
+.foreground{
+  color: $color-theme-1;
+}
+.background{
+  color: $text-theme-2;
+}

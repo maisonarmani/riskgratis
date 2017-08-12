@@ -1,0 +1,48 @@
+.button {
+  display: inline-block;
+  line-height: 3em;
+  padding: 0 3.5em;
+  border-radius: 2em;
+  border:none;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: all 0.3s $global-easing;
+  -moz-transition: all 0.3s $global-easing;
+  -ms-transition: all 0.3s $global-easing;
+  -o-transition: all 0.3s $global-easing;
+  transition: all 0.3s $global-easing;
+  margin: 0.2em 0.5em;
+  &:hover {
+    @extend %no-decoration;
+  }
+  &.theme-1 {
+    $c: $color-theme-1;
+    background-color: $c;
+    &:hover {
+      background-color: lighten($c, 10%);
+    }
+  }
+  &.theme-2 {
+    $c: $color-theme-2;
+    background-color: $c;
+    &:hover {
+      background-color: lighten($c, 10%);
+    }
+  }
+  &.theme-3 {
+    $c: $color-theme-3;
+    background-color: $c;
+    &:hover {
+      background-color: lighten($c, 10%);
+    }
+    &.outline {
+      border: solid 1px $color-theme-3;
+      color: $color-theme-3;
+      background-color: transparent;
+      &:hover {
+        background-color: lighten(white, 0%);
+        color: $color-theme-1;
+      }
+    }
+  }
+}

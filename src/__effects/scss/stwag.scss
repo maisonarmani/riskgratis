@@ -1,0 +1,19 @@
+// always but the animation state in the start
+.#{$prefix} {
+  &-stwag {
+    //@extend %inline-block;
+    @extend %relative;
+    //@extend %hide-overflow;
+    & > *,.item {
+      @extend %absolute;
+      @extend %top-left;
+      opacity: 0;
+      &.active {
+        animation: fade-in-up 0.4s $global-easing forwards;
+      }
+      &.in-active {
+        animation: fade-out-up 0.3s $global-easing forwards;
+      }
+    }
+  }
+}

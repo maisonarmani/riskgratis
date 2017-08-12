@@ -1,3 +1,13 @@
+<html>
 <head>
-    <meta name="mason" content="hello world"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/stylesheets/app.css"/>
 </head>
+<body>
+
+{% include "./splashscreen.nunj" %}
+{% include "partials/side-bar.nunj" %}
+{% include "partials/header.nunj" %}
+<section class="wip-content">

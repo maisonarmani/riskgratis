@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import "./scss/index.scss";
-import App from "./components/app.jsx";
-
 // register
-import registerServiceWorker from './registerServiceWorker';
-ReactDOM.render( <App/>,document.getElementById('app')); // render to the dom
+import App from "./__effects/index";
+document.addEventListener("DOMContentLoaded",function (){
+    "use strict";
+    document.querySelector("#splash-screen").classList.add('hidden')
+    App();
+})
 
+
+import registerServiceWorker from './registerServiceWorker';
 registerServiceWorker();

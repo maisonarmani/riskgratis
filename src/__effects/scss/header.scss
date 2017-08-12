@@ -1,0 +1,100 @@
+.#{$prefix} {
+  @keyframes slideDown {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0%;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      top: 0%;
+    }
+
+    to {
+      top: -100%;
+    }
+  }
+
+  &-header {
+    @extend %absolute;
+    @extend %top-left;
+    @extend %fill-horizontal;
+    z-index:9999998;
+    .__hoverable {
+      &:after {
+        background-color: $color-theme-1;
+      }
+    }
+    a {
+      line-height: 6em;
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+    .__logo {
+      padding: 0.5em;
+      @extend %block;
+      @extend %float-left;
+      img {
+        max-height: 80%;
+        @extend %absolute;
+      }
+    }
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      animation: slideDown 0.6s $global-easing forwards;
+      background-color: white;
+      border-bottom: solid 1px #e8e8e8;
+    }
+    &.in-active {
+      animation: slideUp 0.3s $global-easing forwards;
+    }
+    .__nav {
+      li, ul {
+        @extend %no-margin-padding;
+        @extend %no-decoration;
+      }
+      ul {
+        @extend %float-right;
+      }
+      li {
+        @extend %relative;
+        @extend %block;
+        @extend %float-left;
+        a {
+          @extend %block;
+          padding: 0em 1em;
+        }
+        .__dropdown {
+          @extend %absolute;
+          @extend %hidden;
+          top: 100%;
+          left: 0;
+          background-color: darkred; // removed after test
+          width: 400%;
+          &.active {
+            @extend %block;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .__menu {
+      @extend %block;
+      @extend %float-right;
+      @include lg {
+        display: none;
+      }
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

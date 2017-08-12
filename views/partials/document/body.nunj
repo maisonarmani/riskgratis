@@ -1,0 +1,80 @@
+<section class="wip-section" data-toggle="header" data-toggle-trigger="scroll">
+    <div class="container document-page">
+        {%  include "./aside.nunj" %}
+        <div class="main-content col-lg-10 col-md-8 col-sm-7">
+            <h2>Platform</h2>
+            <h4>This page shows you how key features of CockroachDB stack up against other databases. Hover over
+                features for their intended meanings, and click CockroachDB answers to view related documentation.</h4>
+            <div class="hide-overflow">
+                <div class="col-lg-4 tiny-card-wrapper">
+                    <div class="tiny-card theme-1">
+                        <img src="/images/icons/001-clock.png">
+                        <span class="__heading">Always on time</span>
+                        <span class="__subheading">Est et laudem dissentias. At feugiat suscipiantur eam,</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 tiny-card-wrapper">
+                    <div class="tiny-card theme-1">
+                        <img src="/images/icons/003-contract.png">
+                        <span class="__heading">Talk about trust</span>
+                        <span class="__subheading">Est et laudem dissentias. At feugiat suscipiantur eam,</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 tiny-card-wrapper">
+                    <div class="tiny-card theme-2">
+                        <img src="/images/icons/006-analytics.png">
+                        <span class="__heading">Analytics</span>
+                        <span class="__subheading">Est et laudem dissentias. At feugiat suscipiantur eam,</span>
+                    </div>
+                </div>
+            </div>
+            <p class="highlight-box theme-1 light _">
+                This page shows you how key features of CockroachDB stack up against other databases. Hover over
+                features for their intended meanings, and click CockroachDB answers to view related documentation.
+            </p>
+            <p class="highlight-box theme-2 light _">
+                This page shows you how key features of CockroachDB stack up against other databases. Hover over
+                features for their intended meanings, and click CockroachDB answers to view related documentation.
+            </p>
+
+            <div class="text-container">
+                <h3>API</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, ex ipsum aperiri sea, id graecis lucilius moderatius eam. At pertinax
+                    argumentum
+                    duo. An malorum lucilius scripserit per. Cu ullum eleifend sea, et mel exerci dolorem maiorum. Ex
+                    laudem
+                    scripta eleifend duo, quem lobortis an eum. Tempor tibique cum an, est et atqui nonumes philosophia.
+                    Ad qui
+                    admodum evertitur definitionem, cu qui bonorum repudiandae.
+                </p>
+                <p>
+                    Vim inani inermis definitionem te, eu vidit aeterno ius. An rebum explicari est, ei commodo ponderum
+                    referrentur mei, cu debet elaboraret pro. Ferri ullum no mei, no nam viderer mediocritatem, audire
+                    utamur
+                    referrentur vix ei. Sed nonumy integre abhorreant no.
+                </p>
+                <p>
+                    Eos dicant partem hendrerit at, facete intellegebat id sed, sed gubergren efficiendi ad. Vel quas
+                    detraxit
+                    et, usu an nonumy vocent corrumpit. Ex quot nihil fabulas mel, tation nostro cum no. Usu at dicam
+                    partem
+                    delicatissimi, mel eu sonet aperiri apeirian. Nisl patrioque euripidis ut usu.
+                </p>
+
+                <p>
+                    Everti adolescens percipitur ei sit, hendrerit similique eos no. Ei eam autem fierent, at sumo
+                    nominati
+                    eleifend mei. Usu an ferri justo sadipscing. Ne mei adhuc senserit inciderint, quo docendi mandamus
+                    id, cum
+                    scribentur voluptatibus in.
+                </p>
+                <p>
+                    Est et laudem dissentias. At feugiat suscipiantur eam, agam legere his in. Ei sea alii denique
+                    conceptam, ne
+                    mea nibh eius sapientem. Has ea vituperata liberavisse ullamcorper.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

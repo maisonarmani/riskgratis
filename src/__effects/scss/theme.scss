@@ -1,0 +1,10 @@
+// colors for background
+$color-theme-1:#f7d149;
+$color-theme-2:#005d88;
+$color-theme-3:white;
+$color-theme-4:lighten(grey, 20%);
+
+$text-theme-1:darken($color-theme-1, 10%);
+$text-theme-2:darken($color-theme-2, 10%);
+$text-theme-3:$color-theme-3;
+

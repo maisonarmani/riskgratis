@@ -1,0 +1,103 @@
+
+.#{$prefix}-input-group {
+  & > * {
+    transition: all 0.4s $global-easing;
+  }
+  input {
+    border: solid 1px $color-theme-2;
+    padding: 0.51em 2em;
+    &::placeholder {
+      color: lighten($color-theme-2, 10%);
+    }
+    &:hover {
+      border-color: darken($color-theme-2, 20%);
+    }
+  }
+  button {
+    background-color: $color-theme-2;
+    padding: 0.51em 2em;
+    border: none;
+    color: white;
+    line-height: normal;
+    &:hover {
+      background-color: lighten($color-theme-2, 20%);
+    }
+  }
+
+}
+
+.subscribe {
+  * {
+    vertical-align: middle;
+  }
+  input {
+    width: 35em;
+    max-width: 90%;
+    margin-right: -3em;
+    padding-left: 0em;
+    border-radius: 3em 0 0 3em;
+    line-height: 2em;
+    text-align: center;
+    &:focus {
+      outline-color: transparent;
+    }
+  }
+  button {
+    border-radius: 0 3em 3em 0em;
+    line-height: 2.3em;
+  }
+
+  @include sm {
+    button, input {
+      display: block;
+      margin: 1em auto;
+      border-radius: 3em 3em 3em 3em;
+    }
+  }
+  @include xs{
+    button, input {
+      display: block;
+      margin: 1em auto;
+      border-radius: 3em 3em 3em 3em;
+    }
+  }
+
+}
+
+.request {
+  margin: auto;
+  .input-wrapper {
+    width: 34em;
+    margin: 3em auto;
+    label {
+      text-align: left;
+      margin: 0;
+      font-weight: normal;
+      text-transform: capitalize;
+      font-size: 11px;
+    }
+    input {
+      margin: auto;
+    }
+  }
+  input {
+    display: block;
+    padding: 1em 0;
+    width: 34em;
+    margin: 1.5em auto;
+    max-width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px $text-theme-2 solid;
+    font-weight:bold;
+    color: lighten($text-theme-2,10%);
+    &:focus{
+      color: $text-theme-2;
+      outline-color: transparent;
+    }
+  }
+  .button, button {
+    float: right;
+    padding: 1em 3em;
+  }
+}

@@ -1,0 +1,75 @@
+a{
+  vertical-align: middle;
+}
+
+.#{$prefix}-link {
+  vertical-align: middle;
+  transition: all 0.4s $global-easing;
+  &.__hoverable {
+    @extend %relative;
+    @extend %inline-block;
+    @extend %hide-overflow;
+    &:after {
+      @extend %absolute;
+      @extend %hide-left;
+      @extend %left-bottom;
+      @extend %fill-horizontal;
+      content: "";
+      height: 2px;
+    }
+
+    &.mouse-enter{
+      &:after {
+        animation: out-left-in 0.4s $global-easing forwards;
+      }
+    }
+    &.mouse-left{
+      &:after {
+        animation: in-right-out 0.4s $global-easing forwards;
+      }
+    }
+  }
+
+  a {
+    color: lighten($color-theme-1,10%);
+    @extend %default-transition;
+    @extend %no-decoration;
+
+    &.active{
+      color: $color-theme-2 ;
+    }
+    &:not(.active):hover{
+      color: darken($color-theme-1,20%);
+    }
+  }
+}
+
+.theme-1-link{
+  color: $color-theme-1;
+  &:after{
+    background-color: $color-theme-1;
+  }
+
+  &:hover{
+    color: lighten($color-theme-1,20%);
+  }
+}
+.theme-2-link{
+  color: $color-theme-2;
+  &:after{
+    background-color: $color-theme-2;
+  }
+  &:hover{
+      color: lighten($color-theme-2,10%);
+  }
+}
+.theme-3-link{
+  color: $color-theme-3;
+  &:after{
+    background-color: $color-theme-3;
+  }
+
+  &:hover{
+    color: lighten($color-theme-3,10%);
+  }
+}

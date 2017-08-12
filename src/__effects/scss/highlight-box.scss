@@ -1,0 +1,39 @@
+.highlight-box{
+  width: 100%;
+  padding: 4em 0 4em 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.2em;
+  margin: 1em;
+  &._{
+    padding: 2em;
+    margin: 1em auto;
+  }
+  &.theme-1{
+    border: none;
+    border-left: solid 2px $color-theme-1 ;
+    background-color: lighten($color-theme-1, 10%);
+    &.light{
+      background-color: lighten($color-theme-1, 30%);
+    }
+  }
+  &.theme-2{
+    border: none;
+    border-left:solid 2px $color-theme-2;
+    background-color: lighten($color-theme-2, 10%);
+    &.light{
+      background-color: lighten($color-theme-2, 60%);
+    }
+  }
+}
+
+
+.box_wrapper{
+  padding: 3em 0 4.4em 0;
+  position: relative;
+  border: solid 2px #f7d149;
+  overflow: hidden;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  background-color:#f6f2ea;
+}
