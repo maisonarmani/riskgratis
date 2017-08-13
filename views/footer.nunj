@@ -2,19 +2,9 @@
     <span class="Footer-logo" data-aura-rendered-by="238:0">
         <img src="/images/logo1.png" data-aura-rendered-by="239:0"></span>
     <div data-aura-rendered-by="240:0">Copyright © 2017 Riskgratis™ Inc.</div>
-    <ul class="Footer-nav" data-aura-rendered-by="242:0">
-        <li data-aura-rendered-by="243:0"><a href="/" data-aura-rendered-by="244:0">Riskgratis
-                Status</a></li>
-        <li data-aura-rendered-by="246:0"><a href="/" data-aura-rendered-by="247:0">Community</a></li>
-        <li data-aura-rendered-by="249:0"><a href="/" data-aura-rendered-by="250:0">API</a>
-        </li>
-        <li data-aura-rendered-by="252:0"><a href="/" data-aura-rendered-by="253:0">@Riskgratis</a>
-        </li>
-    </ul>
-    <hr data-aura-rendered-by="255:0">
     <ul class="Footer-nav Footer-nav--secondary" data-aura-rendered-by="256:0">
         <li data-aura-rendered-by="257:0">
-            <a href="/" data-aura-rendered-by="258:0">Blog</a>
+            <a href="/blog" data-aura-rendered-by="258:0">Blog</a>
         </li>
         <li data-aura-rendered-by="260:0">
             <a href="/"

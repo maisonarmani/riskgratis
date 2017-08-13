@@ -24,7 +24,6 @@
 
 .sl{
   &:after{
-
     content: "";
     height: 100px;
     width: 100%;
@@ -35,6 +34,21 @@
     position: relative;
   }
 }
+.tl{
+  overflow:visible !important;
+  top:35px;
+  position:relative;
+   &:before{
+     content: "";
+     height: 35px;
+     width: 100%;
+     display: block;
+     background-color: darken($color-theme-2, 20%);
+     transform: rotate(-1deg);
+     top: -15px;
+     position: relative;
+   }
+ }
 
 .document-page {
   margin-top: 5em;

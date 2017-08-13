@@ -2,7 +2,7 @@
     <div>
         <ul>
             <li class="dropline">
-                <span class="__heading">Plaform  <span class="fa fa-chevron-down"></span></span>
+                <span class="__heading">Platform  <span class="fa fa-chevron-down"></span></span>
                 <ul class="__items_wrapper">
                     <li class="__item"><a href="/platform#api">API</a></li>
                     <li class="__item"><a href="/platform#service">Services</a></li>

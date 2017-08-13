@@ -1,7 +1,8 @@
 <header class="wip-header notification-on {%  if active %} {{ "active" }}{% endif %}" data-toggle-state="active" data-toggled="header">
     <div class="container">
         <!--- this is the site logo-->
-        <a href="/" class="__logo"><img src="/images/logo1.png" class=""/> </a>
+        <a href="/" class="__logo colored"><img src="/images/logo_colored.png" class=""/> </a>
+        <a href="/" class="__logo bnw"><img src="/images/logo_black and white.png" class=""/> </a>
         <!-- menu show up on mobile and when it is required-->
         <a href="#" class="__menu" data-toggle="side-bar" data-toggle-trigger="click">Menu</a>
         <!--- this navigation for the site-->

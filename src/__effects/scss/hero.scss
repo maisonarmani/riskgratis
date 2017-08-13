@@ -1,5 +1,5 @@
 .hero {
-  $bg: linear-gradient(654deg, #1f4c74, black);
+  $bg: linear-gradient(654deg, $text-theme-2, black);
   @extend %fill-horizontal;
   @extend %fill-vertical;
   @extend %relative;

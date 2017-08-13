@@ -24,6 +24,10 @@
     @extend %fill-horizontal;
     z-index:9999998;
     .__hoverable {
+
+      a{
+        color:$color-theme-3 !important;
+      }
       &:after {
         background-color: $color-theme-1;
       }
@@ -33,7 +37,6 @@
       &:hover {
         text-decoration: none;
       }
-
     }
 
     .__logo {
@@ -44,8 +47,29 @@
         max-height: 80%;
         @extend %absolute;
       }
+      &.colored{
+        display:none;
+      }
+      &.bnw{
+        display:inline-block;
+      }
     }
     &.active {
+
+      .__hoverable {
+
+        a{
+          color:$color-theme-2 !important;
+        }
+      }
+      .__logo{
+        &.colored{
+          display:inline-block;
+        }
+        &.bnw{
+          display:none;
+        }
+      }
       position: fixed;
       top: 0;
       left: 0;

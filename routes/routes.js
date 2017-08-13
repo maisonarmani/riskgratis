@@ -25,9 +25,6 @@ function set(active){
         }
         return v
     });
-
-    console.log(_);
-    console.log(links);
     return _
 }
 

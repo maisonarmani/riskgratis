@@ -1,9 +1,11 @@
 <nav class="wip-side-bar" data-toggled='side-bar' data-toggled-state="active">
     <ul class="navi">
         <li><a href="/">Home</a></li>
-        <li><a href="/plaform">Plaform</a></li>
-        <li><a href="/requesr">Request a demo</a></li>
-        <li><a href="/demo">Blog</a></li>
+        <li><a href="/platform">Platform</a></li>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/features">Design Goal</a></li>
+        <li><a href="/request">Request a demo</a></li>
+        <li><a href="/blog">Blog</a></li>
     </ul>
     <a href="#" class="close" data-toggle="side-bar" data-toggle-trigger="click">CLOSE</a>
 </nav>

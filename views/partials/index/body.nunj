@@ -144,17 +144,9 @@
     </div>
 </section>
 <section>
-    <div class="highlight-box no-margin-padding theme-1">
-        <div class="container text-center">
-            <h3 class="text-center" style="margin-top:1.3em;">Really Important Information</h3>
-            <p>
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
-                and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
-                evolved
-                over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
-            <img src="/images/dashboard.jpg" class="img-responsive center" style="margin:1em auto 0 auto"/>
+    <div class="highlight-box no-margin-padding strip tl">
+        <div class="container text-center" style="padding-bottom:3.5em">
+            <img src="/images/demo.png" class="responsive-img"/>
         </div>
     </div>
 </section>

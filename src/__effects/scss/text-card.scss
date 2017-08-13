@@ -16,17 +16,6 @@
   &.padded {
     padding: 0 6em;
   }
-  &.bordered {
-    border-right: solid 1px transparentize(darkgrey, 0.4);
-    padding: 0 2em;
-    &:last-child {
-      border: none;
-      padding-right: 0;
-    }
-    &:first-child {
-      padding-left: 0;
-    }
-  }
 
   @include sm {
     padding: 0 !important;
@@ -108,8 +97,8 @@
     margin: 0 !important;
   }
   .__heading {
-    font-size: 1.2em;
     @extend h2;
+    font-size: 1.2em;
     margin-bottom: 1px;
   }
   .__subheading {

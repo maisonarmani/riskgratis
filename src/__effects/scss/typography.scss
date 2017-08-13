@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Ubuntu');
+@font-face {
+  font-family: 'Cocon';
+  src: url('/fonts/cocon.eot') format('embedded-opentype'),
+  url('/fonts/cocon.woff') format('woff2'),
+  url('/fonts/cocon.ttf') format('truetype'),
+  url('/fonts/cocon.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 
 *::-moz-selection,
 *::selection  { /* Code for Firefox */
@@ -24,7 +32,7 @@ a{
   vertical-align: top;
 }
 h1,h2,h3,h4,h5,h6{
-  font-family:"Circular Std Book" !important;
+  font-family:"Cocon" !important;
   font-weight: bolder;
   line-height: 1.4em !important;
 }
