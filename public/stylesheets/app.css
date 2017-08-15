@@ -1240,6 +1240,18 @@ a, .highlight {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Circular Std Bold';
+  src: url("/fonts/circularstd-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url("/fonts/circularstd-book.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
 *::-moz-selection,
 *::selection {
   /* Code for Firefox */

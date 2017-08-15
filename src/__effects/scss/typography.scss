@@ -8,40 +8,57 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Circular Std Bold';
+  src:url('/fonts/circularstd-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src:url('/fonts/circularstd-book.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 *::-moz-selection,
-*::selection  { /* Code for Firefox */
+*::selection { /* Code for Firefox */
   color: $color-theme-2;
   background: $color-theme-1;
 }
 
-*{
-  -moz-osx-font-smoothing:antialias;
+* {
+  -moz-osx-font-smoothing: antialias;
 }
-body{
+
+body {
   font-size: 12px;
 }
-a{
+
+a {
   line-height: 2.5em;
-  font-weight:bolder;
-  &:hover{
-    text-decoration:none !important;
+  font-weight: bolder;
+  &:hover {
+    text-decoration: none !important;
   }
 }
 
-*{
+* {
   vertical-align: top;
 }
-h1,h2,h3,h4,h5,h6{
-  font-family:"Cocon" !important;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cocon" !important;
   font-weight: bolder;
   line-height: 1.4em !important;
 }
-p{
-  font-family:"Circular Std Book";
+
+p {
+  font-family: "Circular Std Book";
   line-height: 1.5em;
 }
 
-
-.heading{
-  padding:0.5em !important;
+.heading {
+  padding: 0.5em !important;
 }
