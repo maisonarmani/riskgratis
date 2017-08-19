@@ -1262,11 +1262,13 @@ a, .highlight {
   -moz-osx-font-smoothing: antialias; }
 
 body {
-  font-size: 12px; }
+  font-size: 13px;
+  font-family: "Circular Std Book"; }
 
 a {
   line-height: 2.5em;
-  font-weight: bolder; }
+  font-weight: bolder;
+  font-family: "Circular Std Book"; }
   a:hover {
     text-decoration: none !important; }
 
@@ -1279,6 +1281,7 @@ h1, .hero > .__content > .__heading *, .hero > .__content > .__subheading *, h2,
   line-height: 1.4em !important; }
 
 p {
+  font-size: 14.5px;
   font-family: "Circular Std Book";
   line-height: 1.5em; }
 

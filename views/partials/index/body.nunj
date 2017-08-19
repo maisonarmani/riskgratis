@@ -28,16 +28,16 @@
             <div class="col-lg-6 ">
                 <div class="text-card padded">
                     <h3 class="__heading">Header 1</h3>
-                    <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
-                        operating system’s settings for font smoothing.</h5>
+                    <p class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                        operating system’s settings for font smoothing.</p>
                     <a href="#" class="wip-link __hoverable theme-1-link">FONT SMOOTHING</a>
                 </div>
             </div>
             <div class="col-lg-6 ">
                 <div class="text-card padded">
                     <h3 class="__heading">Header 1</h3>
-                    <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
-                        operating system’s settings for font smoothing.</h5>
+                    <p class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                        operating system’s settings for font smoothing.</p>
                     <a href="#" class="wip-link __hoverable theme-1-link">PARTNER WITH RISKGRATIS</a>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     mechanism to impose pre-conditions on a route, then pass control to subsequent routes if there is no
                     reason to proceed with the current route.
                 </p>
-                <p><a href="/request" class="wip-link">REQUEST DEMO</a></p>
+                <a href="/request" class="wip-link __hoverable theme-1-link">REQUEST DEMO</a>
             </div>
         </div>
     </div>
@@ -118,27 +118,27 @@
     <div class="container">
         <div class="col-lg-4 text-card bordered">
             <h3 class="_heading">Update 1</h3>
-            <h5 class="__subheading">
+            <p class="__subheading">
                 All the other browsers (most notably: Firefox on Windows) respects their
                 operating system’s settings for font smoothingAll the other browsers (most notably: Firefox on Windows)
                 respects their
                 operating system’s settings for font smoothingAll the other browsers (most notably: Firefox on Windows)
                 respects their
-                operating system’s settings for font smoothing.</h5>
+                operating system’s settings for font smoothing.</p>
             <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
         </div>
         <div class="col-lg-4 text-card bordered">
             <h3 class="_heading">Update 2</h3>
-            <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
-                operating system’s settings for font smoothing.</h5>
+            <p class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+                operating system’s settings for font smoothing.</p>
             <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
         </div>
         <div class="col-lg-4 text-card bordered">
             <h3 class="_heading">Update 3</h3>
-            <h5 class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
+            <p class="__subheading">All the other browsers (most notably: Firefox on Windows) respects their
                 operating system’s settings for font smoothing.(most notably: Firefox on Windows) respects their
                 operating system’s settings for font smoothing.(most notably: Firefox on Windows) respects their
-                operating system’s settings for font smoothing.</h5>
+                operating system’s settings for font smoothing.</p>
             <a href="#" class="wip-link __hoverable theme-2-link">View Details</a>
         </div>
     </div>
