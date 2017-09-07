@@ -1,0 +1,76 @@
+
+.input-wrapper{
+margin: 1em;
+}
+label{
+  margin: 0;
+  color: lighten(black,10%);
+  padding: 0.5em 0;
+  font-size:1em;
+}
+input,textarea {
+  line-height: 1.5em;
+  border: 0;
+  padding: 1em 1em;
+  display: block;
+  width: 100%;
+  background: rgba(138, 138, 138, 0.12);
+}
+
+textarea{
+  min-height: 12em;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+
+button {
+  line-height: 3em;
+  padding: 0 2em;
+  border: none;
+  border-bottom: solid 3px white;
+  float: right;
+  background-color: lighten($theme-color-1,10%);
+  color: white;
+  transition: all 0.3s $easing;
+  &:hover{
+    background-color: lighten($theme-color-1,1%);
+  }
+}
+
+form.loading{
+  button{
+    opacity: 0.4;
+    pointer:loading;
+  }
+}
+
+
+.newsletter-box{
+  position:relative;
+  max-width: 50em;
+  margin:auto;
+  input{
+    position: absolute;
+    border: solid 1px $theme-color-2;
+    padding: 0 1.2em;
+    border-radius: 2px;
+    line-height:4.5em;
+    color:$theme-color-1;
+    &::placeholder{
+      color:lighten($theme-color-2, 0%);
+    }
+  }
+  button{
+    position: absolute;
+    top:0.25em;
+    right:0.2em;
+    line-height:4.1em;
+    background-color:$theme-color-1;
+    color:white;
+
+    border-radius: 2px;
+  }
+}

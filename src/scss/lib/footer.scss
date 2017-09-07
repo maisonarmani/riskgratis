@@ -1,0 +1,43 @@
+.footer{
+  background-color: darken($theme-color-2,10%);
+  padding:2em 0;
+
+  img{
+    margin-top:2em;
+    max-height: 4em;
+    @media screen and (max-width : 430px){
+      &{
+        display: none;
+      }
+    }
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .heading{
+    display: block;
+    margin: 1em 0;
+    transition: all 0.3s $easing;
+    color: $theme-color-3;
+    position: relative;
+    font-size: 1.1em;
+    &:hover{
+      color: darken($theme-color-3, 2);
+    }
+    &:after{
+      display:inline-block;
+      position: absolute;
+      background-color: $theme-color-3;
+      height: 2px;
+      width: 35%;
+      content: "";
+      bottom:0;
+      left:0
+    }
+  }
+  .item{
+    display: block;
+    color: darken($theme-color-3,20%);
+  }
+}

@@ -1,0 +1,14 @@
+
+.grids{
+  @for $v from 1 through 30{
+    .grid-item:nth-child(#{$v}) {
+      box-sizing: content-box;
+      padding: 0;
+      .content{
+        background-color: lighten(black, ($v + 60));
+        height: 120px * $v;
+        margin: 0.4em;
+      }
+    }
+  }
+}

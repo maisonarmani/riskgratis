@@ -1,0 +1,90 @@
+/** Animation for tangoslide**/
+$in-part: 20%;
+$out-part: 10%;
+@keyframes fade-up-out {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-#{$out-part});
+  }
+}
+
+@keyframes fade-down-out {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(#{$out-part});
+  }
+}
+
+@keyframes fade-up-in {
+  0% {
+    opacity: 0;
+    transform: translateY(#{$in-part});
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-down-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-#{$in-part});
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/** faking it8**/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tango {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  min-height: 17em;
+  font-family: "Circular Std Book";
+  transition:all  1s cubic-bezier(0.64, 0.04, 0.35, 1);
+  $in-easing: 700ms cubic-bezier(0.64, 0.04, 0.35, 1);;
+  $out-easing: 700ms cubic-bezier(0.64, 0.04, 0.35, 1);;
+  .tango-item{
+    position: absolute;
+    top:0;opacity: 0;
+    max-width: 85%;
+  }
+  .tango-indicators-wrapper {
+    position: absolute;
+    background-color: transparent;
+    right: 10px;
+    bottom:50%;
+
+    .tango-indicator{
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      display: block;
+      margin: 4px;
+      border-radius: 2em;
+      transition:all $out-easing;
+      &.active {
+        transform: scale(1.6);
+        border: 1px white solid;
+        background-color: transparent;
+      }
+    }
+  }
+
+}

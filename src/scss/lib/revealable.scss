@@ -1,0 +1,73 @@
+/**
+  Animations for revealable
+**/
+@keyframes slide-right-out{
+  0%{
+    transform: translateX(-100%);
+    transform-origin: left;
+
+  }
+  100%{
+    transform: translateX(100%);
+    transform-origin: left;
+  }
+}
+@keyframes slide-right-down{
+   0%{
+     height: 100%;
+     transform: translateX(-100%);
+     transform-origin: left;
+
+   }
+   100%{
+     transform: translateX(0%);
+     transform-origin: left;
+   }
+ }
+
+@keyframes slide-right{
+  0%{
+    transform: translateX(-100%);
+    transform-origin: left;
+    animation: slide-right-out 0.3s ease-in-out forwards;
+  }
+  100%{
+    transform: translateX(0%);
+    transform-origin: left;
+  }
+}
+
+body{
+  overflow-x: hidden;
+}
+$easing : cubic-bezier(0.64, 0.04, 0.35, 1);
+.revealable{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width:200%;
+    height:100%;
+    background-color: black;
+    transform: translateX(-100%);
+  }
+
+  & > *{
+    position: relative;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+  &.active{
+    &:after{
+      animation:slide-right-out 1.3s $easing forwards;
+    }
+    *{
+      animation:slide-right 0.8s $easing forwards;
+
+    }
+  }
+}

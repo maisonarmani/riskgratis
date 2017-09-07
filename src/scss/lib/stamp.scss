@@ -1,0 +1,37 @@
+.big-small-text{
+  font-family: "Circular Std Bold";
+  font-size: 1.2em;
+  display: block;
+}
+
+.fixed{
+  position: fixed;
+  &.bottom{
+    bottom: 0;
+  }
+  &.left{
+    left:0 ;
+  }
+  &.top{
+    top:0 ;
+  }
+}
+
+.absolute{
+  position: absolute;
+  @extend .fixed
+}
+
+
+.above-all{
+  z-index: 434343;
+}
+.fill-horizontal{
+  width: 100%;
+}
+.fill-vertical{
+  height: 100%;
+}
+.fill-page{
+  height: 100vh; width: 100vw
+}

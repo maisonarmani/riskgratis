@@ -1,0 +1,38 @@
+*::-moz-selection,
+*::selection { /* Code for Firefox */
+  color: $theme-color-1;
+  background: $theme-color-2;
+}
+
+* {
+  -moz-osx-font-smoothing: antialias;
+  vertical-align: top;
+}
+
+body {
+  color: light(black, 50%);
+}
+
+a {
+  line-height: 2.5em;
+  font-weight: bolder;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+}
+
+p {
+  font-size: 14.5px;
+  line-height: 1.5em;
+}
+
+.highlight {
+  color: $theme-color-1;
+  &.theme-2 {
+    color: $theme-color-2;
+  }
+}

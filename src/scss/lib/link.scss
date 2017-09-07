@@ -1,0 +1,66 @@
+
+$easing: cubic-bezier(0.64, 0.04, 0.35, 1);
+.link{
+  transition: all 0.3s $easing;
+  text-decoration: underline;
+  text-decoration-color: $theme-color-1;
+  &:hover{
+    color:$theme-color-1;
+    text-decoration: none;
+  }
+}
+
+a {
+  transition: all 0.3s $easing;
+  color: lighten(black, 4%);
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: lighten(black, 5%);
+  }
+  &.hoverable{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+    &.mouse-enter {
+      &:after {
+        animation: slide-right 0.6s $easing alternate forwards;
+      }
+    }
+
+    &.mouse-leave {
+      &.enter-done {
+        &:after {
+          transform: translateX(0%) !important;
+        }
+      }
+      &:after {
+        animation: slide-right-out 0.6s $easing alternate forwards;
+      }
+    }
+    &:hover {
+      color: darken(black, 4%);
+      text-decoration: none;
+    }
+    &.call {
+      &:after {
+        animation: slide-right-out 0.7s $easing alternate-reverse forwards infinite;
+      }
+    }
+    &:after {
+      height: 4px;
+      width: 100%;
+      content: "";
+      background-color: black;
+      position: absolute;
+      bottom: 9%;
+      left: 0;
+      display: block;
+      transform: translateX(100%);
+    }
+  }
+}
+

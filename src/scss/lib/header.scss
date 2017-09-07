@@ -1,0 +1,261 @@
+$h: 11rem;
+$easing: cubic-bezier(0.64, 0.04, 0.35, 1);
+
+@keyframes spin {
+  0% {
+    transform-origin: center center;
+    transform: rotate(10deg)
+  }
+  100% {
+    transform-origin: center center;
+    transform: rotate(-100deg)
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-($h + 1rem));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-($h + 1rem));
+  }
+
+}
+
+* {
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  margin: .2em 0;
+  font-weight: bold;
+  & > *{
+    vertical-align: baseline;
+  }
+}
+
+
+section {
+  overflow: hidden;
+}
+
+.text-img {
+  height: 1em;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 222;
+  a.logo {
+    img {
+      padding: 1.5em 0;
+      height: $h;
+    }
+    img:nth-child(2){
+        display: none;
+    }
+    line-height: $h;
+  }
+  ul {
+    float: right;
+    li {
+      display: block;
+      list-style: none;
+      float: left;
+      a {
+        $color: white;
+        display: block;
+        line-height: $h;
+        padding: 0 1em;
+        color: $color;
+        transition: all 0.3s $easing;
+        position: relative;
+        text-decoration: none;
+        &:hover {
+          &:after {
+            height: 2px;
+          }
+        }
+        &:after {
+          transition: all 0.3s $easing;
+          content: "";
+          height: 0px;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: rotateZ(160deg);
+          background-color: white;
+        }
+
+        &#side-bar-toggler {
+          width: 5em;
+          background-color: white;
+          border-radius: 5em;
+          height: 5em;
+          padding: 1.8em 01em;
+          margin-top: 1em;
+
+          &:hover {
+            span {
+              width: 100% !important;
+            }
+          }
+
+          span {
+            &.stick {
+              transition: all 0.3s $easing;
+              display: block;
+              margin: 0em 0 0.4em 0;
+              border-bottom: solid 4px black;
+              border-radius: 10px;
+              &:nth-child(1) {
+                width: 90%;
+              }
+              &:nth-child(3) {
+                width: 70%;
+              }
+              &:nth-child(2) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.active {
+    &.transit {
+      animation: slideUp 0.3s $easing forwards !important;
+    }
+
+    background-color: white;
+    position: fixed;
+    animation: slideDown 0.3s $easing forwards;
+    box-shadow: 0 0 15px #e0e0e0;
+    a{
+      color: grey;
+      &:after {
+        background-color: grey;
+      }
+    }
+    .logo{
+      img{
+        &:nth-child(1){
+          display: none;
+        }
+        &:nth-child(2){
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+#background {
+  -webkit-transition: all 0.6s $easing;
+  -moz-transition: all 0.5s $easing;
+  -ms-transition: all 0.5s $easing;
+  -o-transition: all 0.5s $easing;
+  transition: all 0.5s $easing;
+
+
+  &.with-image{
+    background-attachment: fixed;
+    background: url("/img/pages/LoveChinChin.jpg") no-repeat center center / cover;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height:100%;
+      top:0;left:0;
+      background: linear-gradient($theme-color-2, transparent);
+    }
+  }
+}
+
+#background-wrapper {
+  position: absolute;
+  mi-height: 100%;
+  width: 100%;
+  .text {
+    position: relative;
+    color: white;
+    top: 0%;
+    z-index: 22;
+    *:first-child {
+      font-weight: bold;
+      font-size: 4em;
+    }
+    *:nth-child(2) {
+      font-size: 1.5em;
+      color: #e4e0e0 !important;
+    }
+    * {
+      max-width: 600px;
+    }
+  }
+
+}
+
+.button {
+  font-size: 1.1em;
+  text-decoration: none;
+  background-color: $theme-color-2;
+  display: inline-block;
+  padding: 0 2em;
+  line-height: 3em;
+  box-shadow: 7px 5px 0px 0px rgba(39, 9, 9, 0.35);
+  color: white;
+  border-radius: 0px;
+  border: 0;
+  margin-top: 1.5em;
+  transition: all 0.3s $easing;
+  &:hover {
+    box-shadow: 9px 7px 0px 0px rgba(39, 9, 9, 0.35);
+  }
+}
+
+.quoted {
+  position: relative;
+  text-align: center;
+  color: #797979;
+  font-weight: lighter;
+  font-family:Georgia;
+  &:before {
+    font-size: 1.3em;
+    font-weight: bolder;
+    font-family: $font-sub-heading;
+    position: absolute;
+    opacity: 0.5;
+    color: $theme-color-1;
+    bottom: 45%;
+  }
+  &.vision:before {
+    content: "OUR VISION";
+    right: 0px;
+  }
+
+  &.mission:before {
+    content: "OUR MISSION";
+    left: 0px;
+  }
+}
