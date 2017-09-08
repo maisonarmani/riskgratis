@@ -2811,6 +2811,31 @@ form.error .feedback-thanks {
     .tiny-card.theme-3:hover {
       border-color: black; }
 
+.slice-boxx {
+  margin-top: 3em;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.64, 0.04, 0.35, 1); }
+  .slice-boxx * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .slice-boxx img {
+    height: 8em; }
+  .slice-boxx .__heading {
+    color: #333399;
+    margin: 0.7em;
+    font-family: "Circular Std Bold";
+    font-size: 22px; }
+  .slice-boxx .__subheading {
+    margin: 0.4em;
+    color: #10102b;
+    font-size: 16px;
+    word-spacing: 1px;
+    line-height: 1.3em;
+    text-align: center; }
+
 @keyframes spin {
   0% {
     transform-origin: center center;
