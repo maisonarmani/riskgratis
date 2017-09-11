@@ -107,34 +107,25 @@ section {
 
         &#side-bar-toggler {
           width: 5em;
-          background-color: white;
           border-radius: 5em;
           height: 5em;
-          padding: 1.8em 01em;
-          margin-top: 1em;
+          padding-top: 3em;
+          display:block;
 
-          &:hover {
-            span {
-              width: 100% !important;
-            }
+          &:after {
+            content: "";
+            display:none;
           }
-
           span {
             &.stick {
               transition: all 0.3s $easing;
               display: block;
               margin: 0em 0 0.4em 0;
               border-bottom: solid 4px black;
-              border-radius: 10px;
-              &:nth-child(1) {
-                width: 90%;
-              }
-              &:nth-child(3) {
-                width: 70%;
-              }
-              &:nth-child(2) {
-                width: 100%;
-              }
+              border-radius: 100%;
+              background-color:white !important;
+              height:10px;
+              width: 10px;
             }
           }
         }

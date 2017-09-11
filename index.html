@@ -9,95 +9,111 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
 </head>
-<body class="app">
-<header class="header" id="header">
-    <div class="container">
-        <a href="/" class="logo">
-            <img src="/public/images/logo_black and white.png"/>
-            <img src="/public/images/logo_colored_2.png"/>
-        </a>
-        <ul class="navigation">
-            <div class="hidden-sm hidden-xs">
-                <li><a href="#contact" class="scroll-link" data-color-class="cyan">Newsletter</a></li>
+<body class="app" dtt="_menu" dt-value="menu-active" >
+<section class="headr">
+    <header class="_header">
+        <!-- Fixed detached header -->
+        <!--- Using Bootstraps class here --->
+        <div class="container">
+            <div class="left">
+                <a href="/" class="logo">
+                    <img class="full" src="/public/images/logo_black and white.png"/>
+                    <img class="detached" src="/public/images/logo_black_and_white_short.png"/>
+                </a>
             </div>
-            <div class="hidden-lg hidden-md">
-                <li>
-                    <a href="#" class="toggle-menu" id="side-bar-toggler">
-                        <span class="stick"></span>
-                        <span class="stick"></span>
-                        <span class="stick"></span>
-                    </a>
-                </li>
+            <div class="right">
+                <a href="#" class="hamburger" dt-trigger="click" dt="_menu">
+                    <img src="/public/images/vector/menu-svg.svg"/>
+                </a>
             </div>
-        </ul>
-    </div>
-</header>
-<section class="fill-page with-image" id="background" style="background-color:rgb(56, 214, 177)">
-    <div class="absolute bottom above-all fill-horizontal">
-        <a href="#" class="text-center center-block" style="margin-bottom: 2em">
-            <svg version="1.1"
+        </div>
+    </header>
+    <section class="_caurosel ">
+        <!--- This would contain alot of decoration-->
+        <!--- Mostly svg decorations --->
+        <!--- Using Bootstraps class here --->
+        <div class="container">
+            <div class="text">
+                <h1 class="heading">Accurate, Consistent, Effective and Strong Performance</h1>
+                <p class="sub-heading"> Designed by the most industry-savvy business analysts and architects in the world.
+                    Quality-centric, <span class="h">scalable software,</span> engineered in compliance with industry standards and
+                    best practices for performance with zero tolerance for regression.
+                </p>
+                <a href="#contact" class="cta">Subscribe for Updates</a>
+            </div>
+        </div>
+
+        <div class="fill-horizontal" style="position:absolute;top:14em;left:5em">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="732.575px"
+                 height="509.236px" viewBox="0 0 732.575 509.236" enable-background="new 0 0 732.575 509.236"
+                        xml:space="preserve" >
+                <g class="reverse">
+                    <path d="M245.924,498.172l-97.669-191.824H97.664v191.824H0V0h194.63c47.78,0,86.185,14.525,115.236,43.56
+                        c29.038,29.051,43.564,65.592,43.564,109.615c0,34.673-9.487,64.534-28.46,89.583c-18.969,25.066-44.858,42.287-77.641,51.645
+                        l106.804,203.77H245.924z M97.664,222.735h78.699c24.351,0,43.44-6.324,57.263-18.973c13.814-12.649,20.73-29.266,20.73-49.884
+                        c0-21.081-6.915-37.946-20.73-50.595c-13.823-12.641-32.912-18.965-57.263-18.965H97.664V222.735z" />
+            </g>
+        </svg>
+        </div>
+    </section>
+    <section class="_menu" dtt="_menu" dt-value="active">
+        <!-- Side menu with transparent overlay-->
+        <div class="overlay" dt-trigger="click" dt="_menu"></div>
+        <div class="content">
+            <a href="/" class="close" dt-trigger="click" dt="_menu">
+                <img src="/public/images/vector/close.svg"/>
+            </a>
+            <div class="level-1">
+                <span class="heading">A way around</span>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Our Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="level-2">
+                <span class="heading">Keep in touch</span>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Google+</a></li>
+                </ul>
+            </div>
+            <div class="footer-level">
+                <span class="copy-right">&copy; Riskgratis 2017</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="decorations">
+        <!-- social media icons--->
+        <!-- sticky information--->
+        <!-- scroll down direction--->
+        <div class="bottom">
+                <span class="text-center center-block" style="margin-bottom: 10em">
+                    <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg"
                  x="0px" y="0px" width="4px" height="60px" viewBox="0 0 4 60" enable-background="new 0 0 4 60" xml:space="preserve">
                 <line class="dash-down" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" stroke-miterlimit="10" x1="6" y1="6" x2="6" y2="58"/>
             </svg>
-            scroll down to explore
-        </a>
-    </div>
-    <div class="layered container">
-        <div id="background-wrapper" style="top:40%">
-            <div class="text fade-up-in">
-                <h3>
-                    <br>
-                    Accurate, Consistent, Effective, Strong Performance
-                </h3>
-                <p>
-                    Designed by the most industry-savvy business analysts and architects in the world.
-                    Quality-centric, scalable software, engineered in compliance with industry standards and
-                    best practices for performance with zero tolerance for regression.
-                </p>
-                <a href="#contact" class="button">Request Demo</a>
-            </div>
-            <div class="fixed left bottom fill-horizontal above-all" style="z-index: 329320;">
-                <div class="container">
-                    <a href="mailto:sales@riskgratis.com" class="underlined hoverable big-small-text"
-                       style="float: right">info@riskgratis.com</a>
-                </div>
+                    scroll down to explore
+                </span>
+        </div>
+        <div class="right">
+            <div class="container">
+                <a href="mailto:sales@riskgratis.com" class="underlined hoverable big-small-text">info@riskgratis.com</a>
             </div>
         </div>
-        <div class="fill-horizontal" style="top:14em;left:5em">
-            <svg version="1.1"
-         xmlns="http://www.w3.org/2000/svg"
-         x="0px" y="0px" width="732.575px" height="509.236px" viewBox="0 0 732.575 509.236" enable-background="new 0 0 732.575 509.236"
-         xml:space="preserve" >
-                <g class="morpher" id="amoeba">
-                    <path d="M245.924,498.172l-97.669-191.824H97.664v191.824H0V0h194.63c47.78,0,86.185,14.525,115.236,43.56
-                        c29.038,29.051,43.564,65.592,43.564,109.615c0,34.673-9.487,64.534-28.46,89.583c-18.969,25.066-44.858,42.287-77.641,51.645
-                        l106.804,203.77H245.924z M97.664,222.735h78.699c24.351,0,43.44-6.324,57.263-18.973c13.814-12.649,20.73-29.266,20.73-49.884
-                        c0-21.081-6.915-37.946-20.73-50.595c-13.823-12.641-32.912-18.965-57.263-18.965H97.664V222.735z" id="one"/>
-            </g>
-        </svg>
+        <div class="left">
+            <section class="absolute face-up above-all hidden-xs hidden-sm" style="bottom: 0%;left: -5%;">
+                <a class="hoverable" href="#">facebook.com</a>
+                <a class="hoverable" href="#">twitter.com</a>
+                <a class="hoverable" href="#">instagram.com</a>
+            </section>
         </div>
     </div>
-</section>
-<section class="absolute face-up above-all hidden-xs hidden-sm" style="bottom: 30%;left: -5%;">
-    <a class="hoverable" href="#">facebook.com</a>
-    <a class="hoverable" href="#">twitter.com</a>
-    <a class="hoverable" href="#">instagram.com</a>
-</section>
-<section class="section-stamp">
-    <div class="liner">
-        <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In  -->
-        <svg version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" width="13.167px" height="110px" viewBox="0 0 13.167 110" enable-background="new 0 0 13.167 110"
-                 xml:space="preserve">
-                <line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="6.5" y1="0" x2="6.5" y2="110"/>
-                <circle cx="6.583" cy="13.417" r="6.583"/>
-        </svg>
-    </div>
-</section>
 
+</section>
 <section id="section-md-1" class="section-md">
     <div class="container">
         <div class="panel-box">
@@ -182,9 +198,7 @@
 <section class="section-md">
     <div class="container">
         <div>
-            <h1 class="text-center heading">
-                <hr>
-            </h1>
+            <hr>
         </div>
         <div class="col-lg-6 ">
             <div class=" theme-1 slice-boxx">

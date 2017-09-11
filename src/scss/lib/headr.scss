@@ -1,0 +1,295 @@
+body {
+  transition: all 0.2s $easing;
+}
+
+body.menu-active {
+  overflow: hidden;
+}
+
+.headr {
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  }
+  a {
+    display: block
+  }
+
+  img {
+    max-height: 100%;
+  }
+  & > ._header {
+    $height: 5.5em;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    z-index: 22;
+    .logo {
+      height: $height - 1em;
+      overflow: hidden;
+      display: block;
+      .full {
+        @include xs {
+          display: none
+        }
+        @include sm {
+          display: none
+        }
+      }
+      .detached {
+        padding-top: 0.3em;
+        height: $height - 2.2em;
+        @include md {
+          display: none
+        }
+        @include lg {
+          display: none
+        }
+      }
+    }
+
+    .hamburger {
+      height: $height;
+      img {
+        width: 4em;
+        padding-top: 0.21em;
+      }
+    }
+  }
+  & > ._caurosel {
+    z-index: 21;
+    height: 100%;
+    width: 100%;
+    background-color: $theme-color-1;
+    padding: 14em 0 30em 0;
+    background-image: linear-gradient(#333399, transparent);
+    .text{
+      position: relative;
+      z-index: 22;
+      max-width: 50em;
+      .h{
+        display: inline-block;
+        position: relative;
+        color:$theme-color-2;
+      }
+      .heading{
+        font-family: $font-heading;
+        color:white;
+        font-size:3.8em;
+        @include xs {
+          font-size:3.2em;
+        }
+        font-weight:bold;
+      }
+      .sub-heading{
+        color:white;
+        opacity:0.9%;
+        font-size:1.5em;
+        margin-top:1em;
+      }
+      .cta{
+        color:white;
+        font-weight:lighter;
+        display: inline-block !important;
+        opacity: 1;
+        position:relative;
+        margin-top:2em;
+        &:hover{
+
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          transition: all 0.3s $easing;
+          opacity: 0.5;
+          bottom: -10px;
+          background-color: $theme-color-2;
+          height: 5px;
+          width: 100%;
+        }
+      }
+    }
+    @include xs {
+      padding: 12em 0;
+    }
+    @include sm {
+      padding: 15em 0;
+    }
+  }
+
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0%)
+    }
+    to {
+      transform: translateX(100%)
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%)
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  & > ._menu {
+    z-index: 24;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 22;
+    }
+    &.active {
+      display: block;
+      .overlay {
+        display: block;
+      }
+      .content {
+        animation: slideInRight 0.3s $easing forwards;
+      }
+    }
+    &.active.active-remove {
+      .content {
+        animation: slideOutRight 0.3s $easing forwards;
+      }
+    }
+    .content {
+      z-index: 24;
+      position: fixed;
+      width: 32em;
+      max-width: 100%;
+      background-color: lighten(black, 10%);
+      top: 0;
+      right: 0;
+      height: 100%;
+      padding: 3em 1em;
+      transform: translateX(100%);
+      * {
+        color: white;
+        display: block
+      }
+      ul, li {
+        margin: 0;
+        padding: 0;
+      }
+      .heading {
+        opacity: 0.5;
+      }
+
+      .close {
+        padding-left: 1.6em;
+        opacity: 0.6;
+        float: none;
+        img {
+          width: 0.8em;
+        }
+      }
+      .level-1 {
+        font-size: 1.2em;
+        padding: 2em 2em 0;
+        .heading {
+          line-height: 2.4em;
+          & + ul {
+            li a {
+              & {
+                font-size: 1.3em;
+                font-family: $font-heading;
+                display: inline-block;
+                line-height: 2em;
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  transition: all 0.3s $easing;
+                  opacity: 0.5;
+                  bottom: 10px;
+                  background-color: white;
+                  height: 10px;
+                  width: 0;
+                }
+                &:hover {
+                  &::before {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .level-2 {
+        @extend .level-1;
+        .heading {
+          font-size: 0.8em;
+          & + ul {
+            li a {
+              & {
+                font-size: 1.1em !important;
+              }
+            }
+          }
+        }
+      }
+
+      .footer-level {
+        position: absolute;
+        bottom: 0.4em;
+        opacity: 0.5;
+        padding: 2em
+      }
+    }
+
+  }
+
+  & + * {
+
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .reverse {
+    position: relative;
+    * {
+      visibility: hidden;
+    }
+    *:first-child {
+      visibility: visible;
+    }
+    path {
+      fill: rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .decorations {
+    & > *{
+      position: absolute;
+      bottom: 0;
+      width:100%;
+    }
+    .left {
+      font-size:11px;
+      left: 0;
+      bottom:30em;
+    }
+    .right {
+      right: 0;
+      text-align: right;
+      bottom: 6em;
+    }
+  }
+
+}
+

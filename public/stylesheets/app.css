@@ -2054,18 +2054,6 @@ p {
     display: inline-block !important;
     margin: 0 0.5em; }
 
-svg {
-  width: 100%; }
-
-.morpher {
-  position: relative; }
-  .morpher * {
-    visibility: hidden; }
-  .morpher *:first-child {
-    visibility: visible; }
-  .morpher path {
-    fill: rgba(0, 0, 0, 0.15); }
-
 .liner {
   position: absolute;
   bottom: 1em;
@@ -2916,25 +2904,22 @@ section {
           background-color: white; }
         .header ul li a#side-bar-toggler {
           width: 5em;
-          background-color: white;
           border-radius: 5em;
           height: 5em;
-          padding: 1.8em 01em;
-          margin-top: 1em; }
-          .header ul li a#side-bar-toggler:hover span {
-            width: 100% !important; }
+          padding-top: 3em;
+          display: block; }
+          .header ul li a#side-bar-toggler:after {
+            content: "";
+            display: none; }
           .header ul li a#side-bar-toggler span.stick {
             transition: all 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
             display: block;
             margin: 0em 0 0.4em 0;
             border-bottom: solid 4px black;
-            border-radius: 10px; }
-            .header ul li a#side-bar-toggler span.stick:nth-child(1) {
-              width: 90%; }
-            .header ul li a#side-bar-toggler span.stick:nth-child(3) {
-              width: 70%; }
-            .header ul li a#side-bar-toggler span.stick:nth-child(2) {
-              width: 100%; }
+            border-radius: 100%;
+            background-color: white !important;
+            height: 10px;
+            width: 10px; }
   .header.active {
     background-color: white;
     position: fixed;
@@ -3175,3 +3160,228 @@ a {
   .footer .item {
     display: block;
     color: #c4c4c4; }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Non Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+body {
+  transition: all 0.2s cubic-bezier(0.64, 0.04, 0.35, 1); }
+
+body.menu-active {
+  overflow: hidden; }
+
+.headr .right {
+  float: right; }
+
+.headr .left {
+  float: left; }
+
+.headr a {
+  display: block; }
+
+.headr img {
+  max-height: 100%; }
+
+.headr > ._header {
+  padding: 1em 0;
+  position: absolute;
+  width: 100%;
+  z-index: 22; }
+  .headr > ._header .logo {
+    height: 4.5em;
+    overflow: hidden;
+    display: block; }
+    @media (max-width: 767px) {
+      .headr > ._header .logo .full {
+        display: none; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .headr > ._header .logo .full {
+        display: none; } }
+    .headr > ._header .logo .detached {
+      padding-top: 0.3em;
+      height: 3.3em; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .headr > ._header .logo .detached {
+          display: none; } }
+      @media (min-width: 1200px) {
+        .headr > ._header .logo .detached {
+          display: none; } }
+  .headr > ._header .hamburger {
+    height: 5.5em; }
+    .headr > ._header .hamburger img {
+      width: 4em;
+      padding-top: 0.21em; }
+
+.headr > ._caurosel {
+  z-index: 21;
+  height: 100%;
+  width: 100%;
+  background-color: #38d3b1;
+  padding: 14em 0 30em 0;
+  background-image: linear-gradient(#333399, transparent); }
+  .headr > ._caurosel .text {
+    position: relative;
+    z-index: 22;
+    max-width: 50em; }
+    .headr > ._caurosel .text .h {
+      display: inline-block;
+      position: relative;
+      color: #333399; }
+    .headr > ._caurosel .text .heading {
+      font-family: "Product Sans";
+      color: white;
+      font-size: 3.8em;
+      font-weight: bold; }
+      @media (max-width: 767px) {
+        .headr > ._caurosel .text .heading {
+          font-size: 3.2em; } }
+    .headr > ._caurosel .text .sub-heading {
+      color: white;
+      opacity: 0.9%;
+      font-size: 1.5em;
+      margin-top: 1em; }
+    .headr > ._caurosel .text .cta {
+      color: white;
+      font-weight: lighter;
+      display: inline-block !important;
+      opacity: 1;
+      position: relative;
+      margin-top: 2em; }
+      .headr > ._caurosel .text .cta::before {
+        content: "";
+        position: absolute;
+        transition: all 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
+        opacity: 0.5;
+        bottom: -10px;
+        background-color: #333399;
+        height: 5px;
+        width: 100%; }
+  @media (max-width: 767px) {
+    .headr > ._caurosel {
+      padding: 12em 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .headr > ._caurosel {
+      padding: 15em 0; } }
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0%); }
+  to {
+    transform: translateX(100%); } }
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(0%); } }
+
+.headr > ._menu {
+  z-index: 24;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none; }
+  .headr > ._menu .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 22; }
+  .headr > ._menu.active {
+    display: block; }
+    .headr > ._menu.active .overlay {
+      display: block; }
+    .headr > ._menu.active .content {
+      animation: slideInRight 0.3s cubic-bezier(0.64, 0.04, 0.35, 1) forwards; }
+  .headr > ._menu.active.active-remove .content {
+    animation: slideOutRight 0.3s cubic-bezier(0.64, 0.04, 0.35, 1) forwards; }
+  .headr > ._menu .content {
+    z-index: 24;
+    position: fixed;
+    width: 32em;
+    max-width: 100%;
+    background-color: #1a1a1a;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 3em 1em;
+    transform: translateX(100%); }
+    .headr > ._menu .content * {
+      color: white;
+      display: block; }
+    .headr > ._menu .content ul, .headr > ._menu .content li {
+      margin: 0;
+      padding: 0; }
+    .headr > ._menu .content .heading {
+      opacity: 0.5; }
+    .headr > ._menu .content .close {
+      padding-left: 1.6em;
+      opacity: 0.6;
+      float: none; }
+      .headr > ._menu .content .close img {
+        width: 0.8em; }
+    .headr > ._menu .content .level-1, .headr > ._menu .content .level-2 {
+      font-size: 1.2em;
+      padding: 2em 2em 0; }
+      .headr > ._menu .content .level-1 .heading, .headr > ._menu .content .level-2 .heading {
+        line-height: 2.4em; }
+        .headr > ._menu .content .level-1 .heading + ul li a, .headr > ._menu .content .level-2 .heading + ul li a {
+          font-size: 1.3em;
+          font-family: "Product Sans";
+          display: inline-block;
+          line-height: 2em;
+          position: relative; }
+          .headr > ._menu .content .level-1 .heading + ul li a::before, .headr > ._menu .content .level-2 .heading + ul li a::before {
+            content: "";
+            position: absolute;
+            transition: all 0.3s cubic-bezier(0.64, 0.04, 0.35, 1);
+            opacity: 0.5;
+            bottom: 10px;
+            background-color: white;
+            height: 10px;
+            width: 0; }
+          .headr > ._menu .content .level-1 .heading + ul li a:hover::before, .headr > ._menu .content .level-2 .heading + ul li a:hover::before {
+            width: 100%; }
+    .headr > ._menu .content .level-2 .heading {
+      font-size: 0.8em; }
+      .headr > ._menu .content .level-2 .heading + ul li a {
+        font-size: 1.1em !important; }
+    .headr > ._menu .content .footer-level {
+      position: absolute;
+      bottom: 0.4em;
+      opacity: 0.5;
+      padding: 2em; }
+
+.headr svg {
+  width: 100%; }
+
+.headr .reverse {
+  position: relative; }
+  .headr .reverse * {
+    visibility: hidden; }
+  .headr .reverse *:first-child {
+    visibility: visible; }
+  .headr .reverse path {
+    fill: rgba(0, 0, 0, 0.15); }
+
+.headr .decorations > * {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.headr .decorations .left {
+  font-size: 11px;
+  left: 0;
+  bottom: 30em; }
+
+.headr .decorations .right {
+  right: 0;
+  text-align: right;
+  bottom: 6em; }
