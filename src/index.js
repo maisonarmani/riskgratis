@@ -1,5 +1,3 @@
-const VideoHeader = require("./js/header-video");
-
 import Animations from "./js/animations";
 // scss
 import "./scss/index.scss";
@@ -8,14 +6,8 @@ class Riskgratis {
     constructor(_) {
         this.document = _;
         this.addAnimations();
-        this.addHeader();
         this.addHoverable();
         this.addToggler();
-    }
-
-    addHeader() {
-        var vh = new VideoHeader(this.document);
-        vh.render();
     }
 
 

@@ -1853,6 +1853,12 @@
     flex-basis: 50%;
     min-height: 50vh; }
 
+@font-face {
+  font-family: 'Circular Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('"Circular Std Book'), local('"Circular Std Book'), url("/public/fonts/circularstd-book.woff2") format("woff2"); }
+
 *::-moz-selection,
 *::selection {
   /* Code for Firefox */
@@ -2738,6 +2744,10 @@ form.error .feedback-thanks {
 .panel-box {
   padding: 3.5em 0;
   overflow: hidden; }
+  .panel-box * {
+    vertical-align: baseline; }
+  .panel-box .stamp {
+    opacity: 0.2; }
   .panel-box.left .img {
     float: left; }
   .panel-box .sub-heading {
@@ -3195,8 +3205,12 @@ body.menu-active {
   z-index: 22; }
   .headr > ._header .logo {
     height: 4.5em;
-    overflow: hidden;
-    display: block; }
+    display: block;
+    position: relative; }
+    .headr > ._header .logo .stamp {
+      position: absolute;
+      left: 101%;
+      color: white; }
     @media (max-width: 767px) {
       .headr > ._header .logo .full {
         display: none; } }
@@ -3240,7 +3254,7 @@ body.menu-active {
       font-weight: bold; }
       @media (max-width: 767px) {
         .headr > ._caurosel .text .heading {
-          font-size: 3.2em; } }
+          font-size: 3em; } }
     .headr > ._caurosel .text .sub-heading {
       color: white;
       opacity: 0.9%;
@@ -3268,6 +3282,9 @@ body.menu-active {
   @media (min-width: 768px) and (max-width: 991px) {
     .headr > ._caurosel {
       padding: 15em 0; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .headr > ._caurosel {
+      padding-top: 11em; } }
 
 @keyframes slideOutRight {
   from {
@@ -3380,8 +3397,21 @@ body.menu-active {
   font-size: 11px;
   left: 0;
   bottom: 30em; }
+  .headr .decorations .left.social-media {
+    display: none; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .headr .decorations .left.social-media {
+        display: none; } }
 
 .headr .decorations .right {
   right: 0;
   text-align: right;
   bottom: 6em; }
+
+@media (max-width: 767px) {
+  .headr .decorations .bottom {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .headr .decorations .bottom {
+    display: none; } }

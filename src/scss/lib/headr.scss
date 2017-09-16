@@ -12,6 +12,7 @@ body.menu-active {
   }
   .left {
     float: left;
+
   }
   a {
     display: block
@@ -28,8 +29,13 @@ body.menu-active {
     z-index: 22;
     .logo {
       height: $height - 1em;
-      overflow: hidden;
       display: block;
+      position: relative;
+      .stamp{
+        position: absolute;
+        left:101%;
+        color:white;
+      }
       .full {
         @include xs {
           display: none
@@ -79,7 +85,7 @@ body.menu-active {
         color:white;
         font-size:3.8em;
         @include xs {
-          font-size:3.2em;
+          font-size:3em;
         }
         font-weight:bold;
       }
@@ -116,6 +122,9 @@ body.menu-active {
     }
     @include sm {
       padding: 15em 0;
+    }
+    @include md {
+      padding-top: 11em;
     }
   }
 
@@ -283,11 +292,25 @@ body.menu-active {
       font-size:11px;
       left: 0;
       bottom:30em;
+      &.social-media{
+        display: none; // not needed for now
+        @include md{
+          display: none;
+        }
+      }
     }
     .right {
       right: 0;
       text-align: right;
       bottom: 6em;
+    }
+    .bottom{
+      @include xs{
+        display: none;
+      }
+      @include sm{
+        display: none;
+      }
     }
   }
 

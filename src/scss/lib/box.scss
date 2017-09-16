@@ -207,6 +207,12 @@ form.error {
 .panel-box {
   padding: 3.5em 0;
   overflow: hidden;
+  * {
+    vertical-align: baseline;
+  }
+  & .stamp{
+    opacity:0.2;
+  }
   &.left {
     .img {
       float: left;
